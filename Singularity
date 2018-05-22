@@ -3,11 +3,11 @@ OSVersion: xenial
 MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 %help
-  iRODS Version 4.2.1
+  iRODS Version 4.2.2
 
-  $ singularity run icommands.4.2.1.simg [icommand] [args]
-  $ singularity run --app iinit icommands.4.2.1.simg
-  $ singularity run --app iinit icommands.4.2.1.simg [args]
+  $ singularity run icommands.4.2.2.simg [icommand] [args]
+  $ singularity run --app iinit icommands.4.2.2.simg
+  $ singularity run --app iinit icommands.4.2.2.simg [args]
     Where [args] in
     --irods_host String
     --irods_port Integer
@@ -26,13 +26,13 @@ MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 %labels
   Maintainer Michael J. Stealey
   Maintainer_Email stealey@renci.org
-  iRODS_Version 4.2.1
+  iRODS_Version 4.2.2
 
 %environment
-  export IRODS_VERSION=4.2.1
+  export IRODS_VERSION=4.2.2
 
 %post
-  export IRODS_VERSION=4.2.1
+  export IRODS_VERSION=4.2.2
   apt-get update
   apt-get install -y \
     wget \
